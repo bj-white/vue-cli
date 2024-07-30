@@ -6,6 +6,7 @@ import DataProvider from '../../../gcp-requests/src/components/DataProvider.vue'
 import { GCPUtils } from '../../../gcp-utils/lib/index'
 import Router from 'vue-router'
 import MetaView from '../../../meta-view/lib/components/MetaView.vue'
+import { BillDetailView, BillListView } from '../../../web-template-bill/src/widgets/index'
 
 export default class Module {
   constructor ({ config, views = [] }) {
@@ -67,9 +68,11 @@ export default class Module {
     ]
     this.getters = []
     this.functions = []
-    this.components = [
-      DataProvider
-    ]
+    this.components = {
+      DataProvider,
+      BillDetailView,
+      BillListView
+    }
     this.editors = {}
     this.utils = { ...GCPUtils }
     this.services = new Map()

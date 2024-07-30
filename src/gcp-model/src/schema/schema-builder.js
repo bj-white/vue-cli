@@ -9,7 +9,6 @@ class DocumentSchemaBulider {
       this.config = this.listToMap(config).spec
     }
     this.types = {}
-    console.log('DocumentSchemaBulider=====================', this)
   }
 
   listToMap (config) {
