@@ -1,0 +1,2201 @@
+{
+  "_id": "Bwwdj1.myjtestmodule0417.kfkj.default",
+  "kind": "Applet",
+  "metadata": {
+    "product": "kfkj",
+    "app": "myjtestmodule0417",
+    "tenant": "default",
+    "solution": "default",
+    "name": "Bwwdj1",
+    "alias": "bww单据1",
+    "moduleType": "bill",
+    "versionTag": "2.0",
+    "cname": "Bwwdj1.myjtestmodule0417.kfkj",
+    "fname": "Bwwdj1.myjtestmodule0417.kfkj.default",
+    "MD5Code": "ga1hZXtLjDG050N6jMWZvw==",
+    "described": true,
+    "cacheTime": "1721380705016"
+  },
+  "spec": {
+    "base": null,
+    "options": {
+      "md5Code": "ltwRHZ5MW7i/ZTys1gabUQ==",
+      "appSolutionResource": {
+        "_id": "841413791174656.myjtestmodule0417.kfkj",
+        "kind": "AppSolution",
+        "metadata": {
+          "app": "myjtestmodule0417",
+          "product": "kfkj",
+          "name": "841413791174656",
+          "fname": "841413791174656.myjtestmodule0417.kfkj"
+        },
+        "spec": {
+          "tenantIds": [
+            "841413791174656"
+          ]
+        }
+      }
+    },
+    "config": {
+      "styleLibs": [
+        {
+          "baseUrl": "${GCP_CDN_BASE_URL}/gcdp/demo-plugins-web/1.0.111/",
+          "name": "WORKSPACEDemoStyles#428578315740598272",
+          "templateVersion": "master",
+          "label": "系统红色1"
+        },
+        {
+          "baseUrl": "${GCP_CDN_BASE_URL}/gcdp/demo-plugins-web/1.0.222/",
+          "name": "WORKSPACEDemo2Styles#428962645275348992",
+          "templateVersion": "master",
+          "label": "系统2"
+        },
+        {
+          "baseUrl": "${GCP_CDN_BASE_URL}/gcdp/demo-plugins-web/1.0.555/",
+          "name": "WORKSPACEDemo5Styles#428963593280327680",
+          "templateVersion": "master",
+          "label": "某业务组件样式库"
+        }
+      ],
+      "frameworkLib": {
+        "pageExposePath": "./cores/BillPage",
+        "name": "GCDPWebTemplateBill",
+        "packageName": "@gcbp/web-template-bill",
+        "label": "Web端单据模板框架库",
+        "coreName": "Bill"
+      },
+      "widgetLibs": [
+        {
+          "name": "GCBPProductionResourcePoolWeb",
+          "label": "生产管理产品线通用控件库",
+          "packageName": "@pmp/gcbp-production-resource-pool-web",
+          "url": "${GCP_CDN_BASE_URL}/pmp/gcbp-production-resource-pool-web/1.2.0/",
+          "widgetList": [],
+          "version": "master"
+        },
+        {
+          "name": "PmhubPublicWeb#280395143702786048",
+          "label": "Pmhub解决方案部通用控件库",
+          "packageName": "pmhub-public-web",
+          "url": "${GCP_CDN_BASE_URL}/gcbp/pmhub-public-web/1.0.1-alpha.1/",
+          "widgetList": [],
+          "version": "master"
+        },
+        {
+          "name": "GCBPProductionResourcePoolWeb#365498673526546432",
+          "label": "阿口角是非感觉阿股份阿克苏肌肤感觉阿看风景啊可是官方咖啡",
+          "packageName": "@pmp/gcbp-production-resource-pool-web",
+          "url": "${GCP_CDN_BASE_URL}/pmp/gcbp-production-resource-pool-web/1.5.0/",
+          "widgetList": [],
+          "version": "master"
+        },
+        {
+          "name": "COMGCBPMarketBidProcessWeb#428942890676011008",
+          "label": "myj测试控件库",
+          "packageName": "@com/gcbp-market-bid-process-web",
+          "url": "https://cdn.developer.glodon.com/gcbp/gcbp-market-bid-process-web/1.0.0-alpha.3/",
+          "widgetList": [],
+          "version": "master"
+        }
+      ],
+      "pages": [
+        {
+          "name": "list",
+          "path": "/",
+          "view": "BillList"
+        },
+        {
+          "name": "detailNew",
+          "path": "/detail/new",
+          "view": "BillDetail"
+        },
+        {
+          "name": "detail",
+          "path": "/detail/:id",
+          "view": "BillDetail"
+        }
+      ],
+      "serviceDefs": {
+        "default": {
+          "docName": "Bwwdj1.myjtestmodule0417.kfkj.default",
+          "baseUrl": "/kfkj/api/myjtestmodule0417/v1/Bwwdj1/",
+          "apiMap": {
+            "pageData": {
+              "path": "/",
+              "method": "GET"
+            },
+            "queryPage": {
+              "path": "/",
+              "method": "GET"
+            },
+            "newData": {
+              "path": "/new",
+              "method": "GET"
+            },
+            "getOne": {
+              "method": "GET",
+              "path": "/{id}"
+            },
+            "create": {
+              "method": "POST",
+              "path": "/"
+            },
+            "update": {
+              "method": "POST",
+              "path": "/{id}/update"
+            }
+          },
+          "fname": "Bill.template-bill.gcdp.default",
+          "version": "master",
+          "openVersion": "",
+          "isCustomMode": "false",
+          "tenantId": "653403936530432",
+          "workspace": "gect"
+        }
+      },
+      "dataSourceDefs": {
+        "0d3f233eb2": {
+          "meta": {
+            "_id": "0d3f233eb2",
+            "type": "doc",
+            "code": "billInitData",
+            "name": "新建/编辑单据初始化数据源",
+            "remark": null,
+            "actionCode": "newData",
+            "actionName": "数据初始化",
+            "gobjectFname": "Bwwdj1.myjtestmodule0417.kfkj.default",
+            "responseFormat": "object",
+            "baseUrl": "",
+            "method": "GET",
+            "path": "/new",
+            "params": [
+              {
+                "name": "dept._id",
+                "position": "Query",
+                "value": "${context.state.gcpSystemParam.orgId}"
+              },
+              {
+                "name": "fullname",
+                "position": "Query",
+                "value": "${context.state.params.fullname}"
+              }
+            ],
+            "extParam": null,
+            "preload": false,
+            "autoLoad": false,
+            "requestHooks": {},
+            "schemaName": "default",
+            "widgetRefs": [
+              "ModalView-t03cg4ue8j"
+            ]
+          }
+        },
+        "cb73d35be6": {
+          "meta": {
+            "_id": "cb73d35be6",
+            "type": "doc",
+            "code": "tableListData",
+            "name": "单据列表分页查询",
+            "remark": null,
+            "actionCode": "queryPage",
+            "actionName": "分页查询",
+            "gobjectFname": "Bwwdj1.myjtestmodule0417.kfkj.default",
+            "responseFormat": "page",
+            "baseUrl": "",
+            "method": "GET",
+            "path": "/",
+            "params": [
+              {
+                "name": "page",
+                "position": "Query",
+                "value": "0"
+              },
+              {
+                "name": "size",
+                "position": "Query",
+                "value": "10"
+              },
+              {
+                "name": "sort",
+                "position": "Query",
+                "value": null
+              }
+            ],
+            "extParam": "${{\n  \"params\": {\n    \"viewCode\": store.getters['appState/stateByName']({\n      name: 'billQueryId',\n      key: 'filterParams'\n    }, {}).viewCode,\n    \"queryParams\": store.getters['appState/stateByName']({\n      name: 'billQueryId',\n      key: 'filterParams'\n    }, {})\n  }\n}}",
+            "preload": true,
+            "autoLoad": true,
+            "requestHooks": {},
+            "config": {
+              "undeletable": true,
+              "prioritizedApiMap": false
+            },
+            "widgetRefs": [
+              "billListFormTable"
+            ],
+            "schemaName": "default"
+          },
+          "dataSource": {
+            "name": "tableListData",
+            "type": "doc",
+            "schemaName": "default",
+            ":queryDef": "#{function() {\n            var context = this.context\n            var store = this.store\n            var ref = this.ref\n            var extParam = {\n  \"params\": {\n    \"viewCode\": store.getters['appState/stateByName']({\n      name: 'billQueryId',\n      key: 'filterParams'\n    }, {}).viewCode,\n    \"queryParams\": store.getters['appState/stateByName']({\n      name: 'billQueryId',\n      key: 'filterParams'\n    }, {})\n  }\n}\n            extParam = Object.prototype.toString.call(extParam) === '[object Object]' ? extParam : {}\n            var data = undefined\n            data = Object.prototype.toString.call(data) === '[object Object]' || Array.isArray(data) ? data : {}\n            return {\n              ...{ docName: 'Bill.template-bill.gcdp.default', method: 'queryPage'},\n              params: {\n                ...{\n 'page' : '0',\n 'size' : '10',\n 'sort' : ''\n},\n                ...extParam\n              },\n              headers: {\n},\n              data: data\n            }\n        }}",
+            "options": {
+              "preload": true,
+              "autoLoad": true
+            },
+            "requestHooks": {}
+          }
+        }
+      },
+      "iconLibs": [],
+      "plugins": [
+        {
+          "label": "线上插件",
+          "isOnline": true,
+          "isCustom": false,
+          "name": "Bwwdj1.myjtestmodule0417.kfkj.defaultPlugind1s1inknvo",
+          "exposePath": "https://cdn.developer.glodon.com/gcp-plugins/web/Bwwdj1.myjtestmodule0417.kfkj.default/master/default/index.js",
+          "description": null,
+          "params": {}
+        }
+      ],
+      "initialState": {
+        "lastQueryData": null,
+        "lastPage": null
+      },
+      "settings": []
+    },
+    "views": [
+      {
+        "_id": "BillList.myjtestmodule0417.kfkj.default",
+        "kind": "View",
+        "metadata": {
+          "product": "kfkj",
+          "app": "myjtestmodule0417",
+          "tenant": "default",
+          "solution": "default",
+          "name": "BillList",
+          "alias": "列表",
+          "cname": "BillList.myjtestmodule0417.kfkj",
+          "fname": "BillList.myjtestmodule0417.kfkj.default",
+          "described": true
+        },
+        "spec": {
+          "base": null,
+          "options": {},
+          "template": {
+            "slots": {
+              "bodyContainer": [
+                {
+                  "type": "StatefulFormTable",
+                  "slots": {
+                    "default": [
+                      {
+                        "type": "FormTableColumn",
+                        "slots": {
+                          "default": [
+                            {
+                              "type": "ViewAction",
+                              "props": {
+                                ":data": "row",
+                                ":label": "${ row.code  || '-' }",
+                                "showOverflowTooltip": true
+                              },
+                              "id": "ViewAction-97486f26c7"
+                            }
+                          ]
+                        },
+                        "meta": {
+                          "isGroup": false,
+                          "notSaveDesc": {
+                            "truthText": "是",
+                            "falsyText": "否",
+                            "enablePrepend": false,
+                            "prependType": "text",
+                            "prependTextContent": "",
+                            "prependRequired": false,
+                            "enableAppend": false,
+                            "appendType": "text",
+                            "appendTextContent": "",
+                            "appendRequired": false,
+                            "includeOrgTypes": [],
+                            "disabledOrgTypes": [],
+                            "multiple": false,
+                            "multipleLimit": 0,
+                            "collapseTags": true,
+                            "collapseTagsMaxNum": 1,
+                            "checkStrictly": true,
+                            "valueKey": "_id",
+                            "labelKey": "name",
+                            "childrenKey": "children",
+                            "isLeafKey": "isLeaf",
+                            "selectedLabelKey": "",
+                            "defaultExpandAll": false,
+                            "itemsViewType": "text",
+                            "onlySelectLeaf": true,
+                            "showAllLevels": true,
+                            ":cascaderPanelProps": {
+                              "label": "label",
+                              "value": "value",
+                              "children": "children",
+                              "leaf": "leaf",
+                              "checkStrictly": false,
+                              "multiple": false,
+                              "disabled": "disabled",
+                              "multipleLimit": 0
+                            },
+                            "limitLevelIsLeaf": 3,
+                            "showSearch": false,
+                            "selectAllowCreate": false,
+                            "readonlyPreWrap": false,
+                            "showTips": true,
+                            "tipsTextType": "default",
+                            "tipsTextStyle": "default",
+                            "startDateLimitRangeType": "unlimited",
+                            "endDateLimitRangeType": "unlimited",
+                            "actionMaxCount": 3,
+                            "readonlyStyle": "content",
+                            "isEncrypted": false,
+                            "encryptedRange": [
+                              1,
+                              -1
+                            ],
+                            "startDisabled": false,
+                            "endDisabled": false,
+                            "hasThousands": true,
+                            "scale": 0,
+                            "endByZeroFill": false,
+                            "enabledHeadFilter": false,
+                            "dateType": "date",
+                            "dateFormat": "yyyy-MM-dd",
+                            "startReadonly": false,
+                            "endReadonly": false,
+                            "startClearable": true,
+                            "endClearable": true,
+                            "suffixButtonText": "定位",
+                            "dialogTitle": "地图定位",
+                            "dialogSize": "small",
+                            "componentType": "RadioEditor",
+                            "placeholder": "请输入内容",
+                            "clearable": true,
+                            "enabledCollapseContent": true,
+                            "showUnit": true,
+                            "limit": 1,
+                            "mode": "standard",
+                            "showFileUploadBtn": true,
+                            "limitSize": 500,
+                            "limitRangeType": "unlimited",
+                            "optionType": "auto",
+                            "lazy": false,
+                            "preload": false,
+                            "defaultSelectFirst": false,
+                            "enableOptionsCountLimit": false,
+                            "optionsCountMax": 50,
+                            "optionsCountOverflowText": "最多展示50条",
+                            ":cellTooltipIconConfig": {},
+                            "textType": "normal",
+                            "disabled": false,
+                            "isSortable": false,
+                            "isExtColumn": false
+                          }
+                        },
+                        "props": {
+                          "prop": "code",
+                          "label": "编号",
+                          "fixed": true,
+                          "visible": true,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "headTipPlacement": "right",
+                          "headTipEnabled": true,
+                          "required": null,
+                          "type": "custom"
+                        },
+                        "id": "FormTableColumn-59bfe9ce86"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "props": {
+                          "prop": "name",
+                          "label": "单据名称",
+                          "fixed": true,
+                          "align": "right",
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          "visible": true,
+                          "isExtColumn": false,
+                          "showOverflowTooltip": true,
+                          "type": "string"
+                        },
+                        "id": "FormTableColumn-216d15e2e3"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "props": {
+                          "prop": "billState",
+                          "type": "billStateEditor",
+                          "enumType": "BillState.template-bill.gcdp.default",
+                          "default": "notCommitted",
+                          "label": "单据状态",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          "visible": true,
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover"
+                        },
+                        "id": "FormTableColumn-9445574df7"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "props": {
+                          "prop": "createdBy.name",
+                          "label": "制单人",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          "visible": true,
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "type": "string"
+                        },
+                        "id": "FormTableColumn-a61b91810f"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "props": {
+                          "type": "string",
+                          "prop": "dept.name",
+                          "label": "制单机构",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          "visible": true,
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover"
+                        },
+                        "id": "FormTableColumn-89c46c6d0c"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "props": {
+                          "type": "date",
+                          "format": "date",
+                          "prop": "createdDate",
+                          "label": "制单日期",
+                          "align": "right",
+                          "width": "120",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          "visible": true,
+                          "isExtColumn": false,
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover"
+                        },
+                        "id": "FormTableColumn-7f7d2dc233"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "meta": {
+                          "isGroup": false
+                        },
+                        "props": {
+                          "label": "备注",
+                          "prop": "remark",
+                          "align": "center",
+                          "visible": true,
+                          "isExtColumn": false,
+                          "showOverflowTooltip": true,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "type": "text",
+                          "headTipPlacement": "right",
+                          "headTipEnabled": true,
+                          ":cellTooltipIconConfig": {},
+                          "textType": "normal",
+                          "fixed": false,
+                          "required": null,
+                          "readonlyStyle": "content",
+                          "disabled": false,
+                          "isSortable": false,
+                          "placeholder": "请输入内容",
+                          "hasThousands": true,
+                          "scale": 0,
+                          "endByZeroFill": false,
+                          ":cascaderPanelProps": {}
+                        },
+                        "id": "FormTableColumn-f819463833"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "slots": {
+                          "default": [
+                            {
+                              "type": "ViewAction",
+                              "props": {
+                                ":data": "row",
+                                ":index": "$totalIndex",
+                                "type": "text"
+                              },
+                              "id": "ViewAction-b193ebabf2"
+                            },
+                            {
+                              "type": "DeleteBillAction",
+                              "props": {
+                                ":data": "row",
+                                ":index": "$totalIndex",
+                                "type": "text",
+                                "icon": "",
+                                "label": "删除",
+                                "visible": true,
+                                "readonly": true,
+                                "lazy": false,
+                                "needValidate": true,
+                                "mergeProps": [],
+                                "defaultFirstRow": false,
+                                "selectedIsLinkage": false,
+                                "selectedLeafOnly": false,
+                                "usePagination": true,
+                                "pageSize": 10,
+                                "paginationProps": {},
+                                "showSummary": true,
+                                "summaryProps": [],
+                                "isRemoteSummary": false,
+                                "remoteSummaryData": null,
+                                "summaryDefaultValue": "_",
+                                "showIndex": true,
+                                "showSelection": false,
+                                "border": true,
+                                "rowKey": "_id",
+                                "dataSource": "ds:cb73d35be6",
+                                ":load": "#{function(tree, treeNode, resolve) { this.store.dispatch('loadTreeTableData', { tree, treeNode, resolve })}}",
+                                ":dataOptions": "${{\n\"paginated\": true,\n\"force\": true,\n\"defaultPageSize\": 10\n}}",
+                                ":treeProps": "${{\n \"id\": \"_id\",\n \"parentId\": \"parentId\",\n \"orderNo\": \"orderNo\"\n}}",
+                                "defaultExpandedLevel": 2,
+                                ":eventHandlersMap": {
+                                  "page-current-change": [
+                                    {
+                                      "type": "custom",
+                                      "params": {},
+                                      "handler": "#{function(scope, argsParams, prev) {\n  const params = argsParams.args[0];\n  this.context.state.gcpCustomParam.lastPage = params.currentPage\n}}",
+                                      "id": "handler-382da28c0f"
+                                    }
+                                  ]
+                                },
+                                ":lastPage": "${context.state.gcpCustomParam.lastPage}",
+                                "paginationMode": "whole",
+                                "isComputedMaxHeightByViewport": true,
+                                "isComputedHeightByViewport": true,
+                                "indexType": "isContinuous",
+                                "isTree": false,
+                                "paginationOptions": "10, 20, 30, 40, 50",
+                                "stripe": false
+                              },
+                              "id": "DeleteBillAction-0b1e0b03ed"
+                            },
+                            {
+                              "type": "CommonAction",
+                              "props": {
+                                "label": "编辑",
+                                "icon": "",
+                                "type": "text",
+                                "size": "small",
+                                "disabled": false,
+                                "tooltipEnabled": false,
+                                "tooltipContent": "",
+                                "stopPropagation": false,
+                                "visible": false,
+                                ":eventHandlersMap": {
+                                  "click": [
+                                    {
+                                      "id": "handler-9eaeb597c5",
+                                      "type": "openModal",
+                                      "params": {
+                                        "id": "BillList.updateBill.CommonAction-b2d9ed6827",
+                                        "modalTitle": "编辑单据",
+                                        "extParams": {
+                                          "urlParams": {
+                                            "id": "${context.state.appState.moduleState.billListFormTable.selectedRow._id}"
+                                          }
+                                        }
+                                      },
+                                      "options": {
+                                        "target": [
+                                          "updateBill"
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "id": "CommonAction-b2d9ed6827"
+                            }
+                          ]
+                        },
+                        "props": {
+                          "type": "action",
+                          "label": "操作",
+                          "width": "120",
+                          "fixed": "right"
+                        },
+                        "id": "FormTableColumn-1f164f0ba8"
+                      }
+                    ],
+                    "formTableAppend": []
+                  },
+                  "events": {
+                    ":selected": "#{ function(row, store) { store.commit('appState/updateState', {name: 'billTableId', key: 'selectedRow', value: row }) }}",
+                    ":sort-change": "#{ function(val) { this.store.dispatch('sortListData', val)} }"
+                  },
+                  "props": {
+                    "readonly": true,
+                    "lazy": false,
+                    "needValidate": true,
+                    "mergeProps": [],
+                    "defaultFirstRow": false,
+                    "selectedIsLinkage": false,
+                    "selectedLeafOnly": false,
+                    "usePagination": true,
+                    "pageSize": 10,
+                    "paginationProps": {},
+                    "showSummary": true,
+                    "summaryProps": [],
+                    "isRemoteSummary": false,
+                    "remoteSummaryData": null,
+                    "summaryDefaultValue": "_",
+                    "showIndex": true,
+                    "showSelection": false,
+                    "border": true,
+                    "rowKey": "_id",
+                    "visible": true,
+                    "dataSource": "ds:cb73d35be6",
+                    ":load": "#{function(tree, treeNode, resolve) { this.store.dispatch('loadTreeTableData', { tree, treeNode, resolve })}}",
+                    ":dataOptions": "${{\n\"paginated\": true,\n\"force\": true,\n\"defaultPageSize\": 10\n}}",
+                    ":treeProps": "${{\n \"id\": \"_id\",\n \"parentId\": \"parentId\",\n \"orderNo\": \"orderNo\"\n}}",
+                    "defaultExpandedLevel": 2,
+                    ":eventHandlersMap": {
+                      "page-current-change": [
+                        {
+                          "type": "custom",
+                          "params": {},
+                          "handler": "#{function(scope, argsParams, prev) {\n  const params = argsParams.args[0];\n  this.context.state.gcpCustomParam.lastPage = params.currentPage\n}}",
+                          "id": "handler-382da28c0f"
+                        }
+                      ]
+                    },
+                    ":lastPage": "${context.state.gcpCustomParam.lastPage}",
+                    "paginationMode": "whole",
+                    "isComputedMaxHeightByViewport": true,
+                    "isComputedHeightByViewport": true,
+                    "indexType": "isContinuous",
+                    "isTree": false,
+                    "paginationOptions": "10, 20, 30, 40, 50",
+                    "stripe": false
+                  },
+                  "id": "billListFormTable"
+                },
+                {
+                  "type": "UpdateBillModalView",
+                  "props": {
+                    "modalTitle": "新建单据"
+                  },
+                  "id": "BillList.updateBill.CommonAction-0f888a6e54"
+                },
+                {
+                  "type": "UpdateBillModalView",
+                  "props": {
+                    "modalTitle": "编辑单据",
+                    ":extParams": {
+                      "urlParams": {
+                        "id": "${context.state.appState.moduleState.billListFormTable.selectedRow._id}"
+                      }
+                    }
+                  },
+                  "id": "BillList.updateBill.CommonAction-b2d9ed6827"
+                }
+              ],
+              "queryZone": [
+                {
+                  "type": "QueryFilter",
+                  "slots": {
+                    "default": [],
+                    "expand": [],
+                    "keyword": []
+                  },
+                  "props": {
+                    "type": "SimpleQuery",
+                    "fieldGridResponsiveLayout": true,
+                    "fieldGridMaxColumnCount": 4,
+                    "keywordsGroupProps": {},
+                    "showKeywordsSearch": true,
+                    "searchPlaceholder": "请输入编号/单据名称",
+                    "visible": true,
+                    ":initialData": "${{\n  \"sort\": null,\n  \"dept._id\": store.state.params.deptId,\n  \"dataScopeOfDeptId\": store.state.params.deptId\n}}",
+                    ":lastData": "${context.state.gcpCustomParam.lastQueryData}",
+                    ":eventHandlersMap": {
+                      "query": [
+                        {
+                          "type": "custom",
+                          "params": {},
+                          "handler": "#{function(scope, argsParams, prev) {\n  const [params, lastQueryData] = argsParams.args;\n  this.context.state.gcpCustomParam.lastQueryData = lastQueryData\n}}",
+                          "id": "handler-f275cd966e"
+                        }
+                      ],
+                      "reset": [
+                        {
+                          "type": "custom",
+                          "params": {},
+                          "handler": "#{function(scope, argsParams, prev) {\n  const initialData = argsParams.args[0];\n  this.context.state.gcpCustomParam.lastQueryData = initialData;\n}}",
+                          "id": "handler-9578df38be"
+                        }
+                      ],
+                      "toggle-expand": [
+                        {
+                          "id": "handler-c842628981",
+                          "type": "custom",
+                          "params": {},
+                          "handler": "#{function(scope, argsParams, prev) {\n  const formTableRef = this.ref(\"billListFormTable\")()\n  formTableRef.setTableMaxHeight()\n}}"
+                        }
+                      ]
+                    }
+                  },
+                  "id": "billQueryId"
+                }
+              ],
+              "actionZone": [
+                {
+                  "type": "NewAction",
+                  "props": {
+                    "label": "创建单据"
+                  },
+                  "id": "NewAction-a0f18344a1"
+                },
+                {
+                  "type": "CommonAction",
+                  "props": {
+                    "label": "弹窗创建单据",
+                    "icon": "",
+                    "type": "primary",
+                    "size": "small",
+                    "disabled": false,
+                    "tooltipEnabled": false,
+                    "tooltipContent": "",
+                    "stopPropagation": "",
+                    "visible": false,
+                    ":eventHandlersMap": {
+                      "click": [
+                        {
+                          "id": "handler-e97785988b",
+                          "type": "openModal",
+                          "params": {
+                            "id": "BillList.updateBill.CommonAction-0f888a6e54",
+                            "modalTitle": "新建单据",
+                            "extParams": {
+                              "urlParams": {
+                                "id": ""
+                              }
+                            }
+                          },
+                          "options": {
+                            "target": [
+                              "updateBill"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "id": "CommonAction-0f888a6e54"
+                },
+                {
+                  "type": "ProcessTrackAction",
+                  "id": "ProcessTrackAction-c7eaba3f85"
+                },
+                {
+                  "type": "RefreshAction",
+                  "props": {
+                    "type": "text"
+                  },
+                  "id": "RefreshAction-4ebbaf58b1"
+                }
+              ]
+            },
+            "id": "BillListView-0b474727c5",
+            "type": "BillListView",
+            "props": {
+              "queryInitialData": {},
+              "paginationProps": {
+                "pageSizes": [
+                  10,
+                  20,
+                  50,
+                  100
+                ],
+                "type": "manual"
+              },
+              "searchPlaceholder": "请输入编号/单据名称",
+              "tableProps": {
+                "showSummary": true,
+                "isRemoteSummary": true,
+                "summaryProps": [
+                  "contractAmount",
+                  "budgetAmount",
+                  "reportAmount",
+                  "replyAmount"
+                ],
+                "summaryCols": []
+              },
+              "formTableTreeProps": {
+                "children": "children",
+                "hasChildren": "hasChildren"
+              },
+              "formTableRowKey": "_id",
+              "formTablePaginationProps": null,
+              "keywordsGroupProps": {},
+              "queryFilterMaxColumnCount": 4,
+              "actionZoneVisible": true,
+              "formTableLazy": false,
+              "queryFilterResponsiveLayout": false,
+              "defaultHideActionZone": false,
+              "hasLeftAside": false,
+              "isKeepAlive": true,
+              "toolbarPosition": "right",
+              ":watermarkConfig": {}
+            }
+          }
+        }
+      },
+      {
+        "_id": "BillDetail.myjtestmodule0417.kfkj.default",
+        "kind": "View",
+        "metadata": {
+          "product": "kfkj",
+          "app": "myjtestmodule0417",
+          "tenant": "default",
+          "solution": "default",
+          "name": "BillDetail",
+          "alias": "详情",
+          "cname": "BillDetail.myjtestmodule0417.kfkj",
+          "fname": "BillDetail.myjtestmodule0417.kfkj.default",
+          "described": true
+        },
+        "spec": {
+          "base": null,
+          "options": {},
+          "template": {
+            "slots": {
+              "default": [
+                {
+                  "type": "Section",
+                  "slots": {
+                    "default": [
+                      {
+                        "type": "FieldGrid",
+                        "slots": {
+                          "default": [
+                            {
+                              "type": "InputEditor",
+                              "props": {
+                                "prop": "code",
+                                "label": "编号",
+                                "maxLength": 50
+                              },
+                              "id": "InputEditor-27181e055f"
+                            },
+                            {
+                              "type": "InputEditor",
+                              "props": {
+                                "label": "单据名称",
+                                "prop": "name",
+                                "required": true
+                              },
+                              "id": "InputEditor-06e91b8e39"
+                            },
+                            {
+                              "type": "EnumEditor",
+                              "props": {
+                                "prop": "billState",
+                                "label": "单据状态",
+                                "readonly": true
+                              },
+                              "id": "EnumEditor-76a47eb53d"
+                            },
+                            {
+                              "type": "InputEditor",
+                              "props": {
+                                "type": "string",
+                                "prop": "dept.name",
+                                "label": "制单机构",
+                                "readonly": true
+                              },
+                              "id": "InputEditor-fa10d31924"
+                            },
+                            {
+                              "type": "TextEditor",
+                              "props": {
+                                "type": "text",
+                                "prop": "createdBy.name",
+                                "label": "制单人",
+                                "readonly": true
+                              },
+                              "id": "TextEditor-0f2fd7bfce"
+                            },
+                            {
+                              "type": "DateEditor",
+                              "props": {
+                                "type": "date",
+                                "format": "date",
+                                "prop": "createdDate",
+                                "label": "制单日期",
+                                "readonly": true
+                              },
+                              "id": "DateEditor-82f0c2e2b0"
+                            },
+                            {
+                              "type": "TextEditor",
+                              "props": {
+                                "prop": "remark",
+                                "label": "备注",
+                                "col": 2,
+                                "forceBreak": true,
+                                "tipIcon": "",
+                                "tipIconType": "info",
+                                "tipContent": "",
+                                "tipTriggerType": "hover",
+                                "showLabel": true,
+                                "visible": true
+                              },
+                              "id": "TextEditor-6677225952"
+                            },
+                            {
+                              "type": "InputEditor",
+                              "meta": {
+                                "notSaveDesc": {
+                                  "disabledInput": true,
+                                  "selectModelIcon": "el-icon-search",
+                                  "enabledCollapseContent": true,
+                                  "encryptedRange": [
+                                    1,
+                                    -1
+                                  ],
+                                  "prependRequired": false,
+                                  "appendRequired": false
+                                }
+                              },
+                              "props": {
+                                "prop": "aaa",
+                                "label": "temp",
+                                "showLabel": true,
+                                "textType": "normal",
+                                "icon": "",
+                                "col": 1,
+                                "forceBreak": false,
+                                "disabled": false,
+                                "required": null,
+                                "enableSelectModal": false,
+                                "readonlyPlaceholder": "-",
+                                "readonlyPreWrap": false,
+                                "format": "none",
+                                "isEncrypted": false,
+                                "placeholder": "请输入内容",
+                                "clearable": false,
+                                "visible": true,
+                                "enablePrepend": false,
+                                "prependType": "text",
+                                "prependTextContent": "",
+                                "enableAppend": false,
+                                "appendType": "text",
+                                "appendTextContent": "",
+                                "tipIcon": "",
+                                "tipIconType": "info",
+                                "tipContent": "",
+                                "tipTriggerType": "hover",
+                                "styleClass": "",
+                                ":eventHandlersMap": {},
+                                "dataType": "string"
+                              },
+                              "id": "InputEditor-97bf39cd0f"
+                            }
+                          ]
+                        },
+                        "id": "FieldGrid-943e5575da"
+                      },
+                      {
+                        "type": "Section",
+                        "slots": {
+                          "default": [
+                            {
+                              "type": "StatefulFormTable",
+                              "slots": {
+                                "default": [
+                                  {
+                                    "type": "FormTableColumn",
+                                    "meta": {
+                                      "isGroup": false,
+                                      "notSaveDesc": {
+                                        "truthText": "是",
+                                        "falsyText": "否",
+                                        "enablePrepend": false,
+                                        "prependType": "text",
+                                        "prependTextContent": "",
+                                        "prependRequired": false,
+                                        "enableAppend": false,
+                                        "appendType": "text",
+                                        "appendTextContent": "",
+                                        "appendRequired": false,
+                                        "includeOrgTypes": [],
+                                        "disabledOrgTypes": [],
+                                        "enabledAuthedControl": true,
+                                        "multiple": false,
+                                        "multipleLimit": 0,
+                                        "collapseTags": true,
+                                        "collapseTagsMaxNum": 1,
+                                        "valueKey": "_id",
+                                        "labelKey": "name",
+                                        "childrenKey": "children",
+                                        "isLeafKey": "isLeaf",
+                                        "selectedLabelKey": "",
+                                        "defaultExpandAll": false,
+                                        "itemsViewType": "text",
+                                        "checkStrictly": false,
+                                        "onlySelectLeaf": true,
+                                        "showAllLevels": true,
+                                        ":cascaderPanelProps": {
+                                          "label": "label",
+                                          "value": "value",
+                                          "children": "children",
+                                          "leaf": "leaf",
+                                          "checkStrictly": false,
+                                          "multiple": false,
+                                          "disabled": "disabled",
+                                          "multipleLimit": 0
+                                        },
+                                        "limitLevelIsLeaf": 3,
+                                        "showSearch": false,
+                                        "selectAllowCreate": false,
+                                        "readonlyPreWrap": false,
+                                        "showTips": true,
+                                        "tipsTextType": "default",
+                                        "tipsTextStyle": "default",
+                                        "startDateLimitRangeType": "unlimited",
+                                        "endDateLimitRangeType": "unlimited",
+                                        "actionMaxCount": 3,
+                                        "readonlyStyle": "content",
+                                        "isEncrypted": false,
+                                        "encryptedRange": [
+                                          1,
+                                          -1
+                                        ],
+                                        "startDisabled": false,
+                                        "endDisabled": false,
+                                        "hasThousands": true,
+                                        "endByZeroFill": false,
+                                        "enabledHeadFilter": false,
+                                        "dateType": "date",
+                                        "dateFormat": "yyyy-MM-dd",
+                                        "startReadonly": false,
+                                        "endReadonly": false,
+                                        "startClearable": true,
+                                        "endClearable": true,
+                                        "suffixButtonText": "定位",
+                                        "dialogTitle": "地图定位",
+                                        "dialogSize": "small",
+                                        "componentType": "RadioEditor",
+                                        "placeholder": "请输入内容",
+                                        "clearable": true,
+                                        "enabledCollapseContent": true,
+                                        "showUnit": true,
+                                        "limit": 1,
+                                        "mode": "standard",
+                                        "showFileUploadBtn": true,
+                                        "limitSize": 500,
+                                        "optionType": "auto",
+                                        "lazy": false,
+                                        "preload": false,
+                                        "defaultSelectFirst": false,
+                                        "enableOptionsCountLimit": false,
+                                        "optionsCountMax": 50,
+                                        "optionsCountOverflowText": "最多展示50条",
+                                        "allowRefAutograph": true,
+                                        "limitRangeType": "unlimited"
+                                      }
+                                    },
+                                    "props": {
+                                      "isExtColumn": false,
+                                      "align": "left",
+                                      "showOverflowTooltip": true,
+                                      "label": "单价",
+                                      "textType": "normal",
+                                      "required": null,
+                                      "disabled": false,
+                                      "isSortable": false,
+                                      "headTipIcon": "",
+                                      "headTipIconType": "info",
+                                      "headTipPlacement": "right",
+                                      "headTipEnabled": true,
+                                      ":cellTooltipIconConfig": {},
+                                      ":eventHandlersMap": {},
+                                      "headTipContent": "",
+                                      "headTipTriggerType": "hover",
+                                      "fixed": false,
+                                      "visible": true,
+                                      "prop": "dj",
+                                      "dataType": "decimal"
+                                    },
+                                    "id": "FormTableColumn-c35fb14ee0"
+                                  },
+                                  {
+                                    "type": "FormTableColumn",
+                                    "meta": {
+                                      "isGroup": false,
+                                      "notSaveDesc": {
+                                        "truthText": "是",
+                                        "falsyText": "否",
+                                        "enablePrepend": false,
+                                        "prependType": "text",
+                                        "prependTextContent": "",
+                                        "prependRequired": false,
+                                        "enableAppend": false,
+                                        "appendType": "text",
+                                        "appendTextContent": "",
+                                        "appendRequired": false,
+                                        "includeOrgTypes": [],
+                                        "disabledOrgTypes": [],
+                                        "enabledAuthedControl": true,
+                                        "multiple": false,
+                                        "multipleLimit": 0,
+                                        "collapseTags": true,
+                                        "collapseTagsMaxNum": 1,
+                                        "valueKey": "_id",
+                                        "labelKey": "name",
+                                        "childrenKey": "children",
+                                        "isLeafKey": "isLeaf",
+                                        "selectedLabelKey": "",
+                                        "defaultExpandAll": false,
+                                        "itemsViewType": "text",
+                                        "checkStrictly": false,
+                                        "onlySelectLeaf": true,
+                                        "showAllLevels": true,
+                                        ":cascaderPanelProps": {
+                                          "label": "label",
+                                          "value": "value",
+                                          "children": "children",
+                                          "leaf": "leaf",
+                                          "checkStrictly": false,
+                                          "multiple": false,
+                                          "disabled": "disabled",
+                                          "multipleLimit": 0
+                                        },
+                                        "limitLevelIsLeaf": 3,
+                                        "showSearch": false,
+                                        "selectAllowCreate": false,
+                                        "readonlyPreWrap": false,
+                                        "showTips": true,
+                                        "tipsTextType": "default",
+                                        "tipsTextStyle": "default",
+                                        "startDateLimitRangeType": "unlimited",
+                                        "endDateLimitRangeType": "unlimited",
+                                        "actionMaxCount": 3,
+                                        "readonlyStyle": "content",
+                                        "isEncrypted": false,
+                                        "encryptedRange": [
+                                          1,
+                                          -1
+                                        ],
+                                        "startDisabled": false,
+                                        "endDisabled": false,
+                                        "hasThousands": true,
+                                        "endByZeroFill": false,
+                                        "enabledHeadFilter": false,
+                                        "dateType": "date",
+                                        "dateFormat": "yyyy-MM-dd",
+                                        "startReadonly": false,
+                                        "endReadonly": false,
+                                        "startClearable": true,
+                                        "endClearable": true,
+                                        "suffixButtonText": "定位",
+                                        "dialogTitle": "地图定位",
+                                        "dialogSize": "small",
+                                        "componentType": "RadioEditor",
+                                        "placeholder": "请输入内容",
+                                        "clearable": true,
+                                        "enabledCollapseContent": true,
+                                        "showUnit": true,
+                                        "limit": 1,
+                                        "mode": "standard",
+                                        "showFileUploadBtn": true,
+                                        "limitSize": 500,
+                                        "optionType": "auto",
+                                        "lazy": false,
+                                        "preload": false,
+                                        "defaultSelectFirst": false,
+                                        "enableOptionsCountLimit": false,
+                                        "optionsCountMax": 50,
+                                        "optionsCountOverflowText": "最多展示50条",
+                                        "allowRefAutograph": true,
+                                        "limitRangeType": "unlimited"
+                                      }
+                                    },
+                                    "props": {
+                                      "isExtColumn": false,
+                                      "align": "left",
+                                      "showOverflowTooltip": true,
+                                      "label": "数量",
+                                      "textType": "normal",
+                                      "required": null,
+                                      "disabled": false,
+                                      "isSortable": false,
+                                      "headTipIcon": "",
+                                      "headTipIconType": "info",
+                                      "headTipPlacement": "right",
+                                      "headTipEnabled": true,
+                                      ":cellTooltipIconConfig": {},
+                                      ":eventHandlersMap": {},
+                                      "prop": "sl",
+                                      "headTipContent": "",
+                                      "headTipTriggerType": "hover",
+                                      "fixed": false,
+                                      "visible": true,
+                                      "dataType": "int"
+                                    },
+                                    "id": "FormTableColumn-b2656c395d"
+                                  },
+                                  {
+                                    "type": "FormTableColumn",
+                                    "meta": {
+                                      "isGroup": false,
+                                      "notSaveDesc": {
+                                        "truthText": "是",
+                                        "falsyText": "否",
+                                        "enablePrepend": false,
+                                        "prependType": "text",
+                                        "prependTextContent": "",
+                                        "prependRequired": false,
+                                        "enableAppend": false,
+                                        "appendType": "text",
+                                        "appendTextContent": "",
+                                        "appendRequired": false,
+                                        "includeOrgTypes": [],
+                                        "disabledOrgTypes": [],
+                                        "enabledAuthedControl": true,
+                                        "multiple": false,
+                                        "multipleLimit": 0,
+                                        "collapseTags": true,
+                                        "collapseTagsMaxNum": 1,
+                                        "valueKey": "_id",
+                                        "labelKey": "name",
+                                        "childrenKey": "children",
+                                        "isLeafKey": "isLeaf",
+                                        "selectedLabelKey": "",
+                                        "defaultExpandAll": false,
+                                        "itemsViewType": "text",
+                                        "checkStrictly": false,
+                                        "onlySelectLeaf": true,
+                                        "showAllLevels": true,
+                                        ":cascaderPanelProps": {
+                                          "label": "label",
+                                          "value": "value",
+                                          "children": "children",
+                                          "leaf": "leaf",
+                                          "checkStrictly": false,
+                                          "multiple": false,
+                                          "disabled": "disabled",
+                                          "multipleLimit": 0
+                                        },
+                                        "limitLevelIsLeaf": 3,
+                                        "showSearch": false,
+                                        "selectAllowCreate": false,
+                                        "readonlyPreWrap": false,
+                                        "showTips": true,
+                                        "tipsTextType": "default",
+                                        "tipsTextStyle": "default",
+                                        "startDateLimitRangeType": "unlimited",
+                                        "endDateLimitRangeType": "unlimited",
+                                        "actionMaxCount": 3,
+                                        "readonlyStyle": "content",
+                                        "isEncrypted": false,
+                                        "encryptedRange": [
+                                          1,
+                                          -1
+                                        ],
+                                        "startDisabled": false,
+                                        "endDisabled": false,
+                                        "hasThousands": true,
+                                        "endByZeroFill": false,
+                                        "enabledHeadFilter": false,
+                                        "dateType": "date",
+                                        "dateFormat": "yyyy-MM-dd",
+                                        "startReadonly": false,
+                                        "endReadonly": false,
+                                        "startClearable": true,
+                                        "endClearable": true,
+                                        "suffixButtonText": "定位",
+                                        "dialogTitle": "地图定位",
+                                        "dialogSize": "small",
+                                        "componentType": "RadioEditor",
+                                        "placeholder": "请输入内容",
+                                        "clearable": true,
+                                        "enabledCollapseContent": true,
+                                        "showUnit": true,
+                                        "limit": 1,
+                                        "mode": "standard",
+                                        "showFileUploadBtn": true,
+                                        "limitSize": 500,
+                                        "optionType": "auto",
+                                        "lazy": false,
+                                        "preload": false,
+                                        "defaultSelectFirst": false,
+                                        "enableOptionsCountLimit": false,
+                                        "optionsCountMax": 50,
+                                        "optionsCountOverflowText": "最多展示50条",
+                                        "allowRefAutograph": true,
+                                        "limitRangeType": "unlimited"
+                                      }
+                                    },
+                                    "props": {
+                                      "isExtColumn": false,
+                                      "align": "left",
+                                      "showOverflowTooltip": true,
+                                      "label": "总价",
+                                      "textType": "normal",
+                                      "required": null,
+                                      "disabled": false,
+                                      "isSortable": false,
+                                      "headTipIcon": "",
+                                      "headTipIconType": "info",
+                                      "headTipPlacement": "right",
+                                      "headTipEnabled": true,
+                                      ":cellTooltipIconConfig": {},
+                                      ":eventHandlersMap": {},
+                                      "prop": "zj",
+                                      "headTipContent": "",
+                                      "headTipTriggerType": "hover",
+                                      "fixed": false,
+                                      "visible": true,
+                                      "dataType": "decimal"
+                                    },
+                                    "id": "FormTableColumn-725e25b973"
+                                  }
+                                ]
+                              },
+                              "meta": {
+                                "notSaveDesc": {
+                                  "scrollXOffsetSize": 3,
+                                  "scrollYOffsetSize": 5,
+                                  "isLocalPagination": false,
+                                  "rootNodeId": "-1",
+                                  "selectedIncludeHalf": false,
+                                  "expandedLevelParamsKey": "level"
+                                }
+                              },
+                              "props": {
+                                "showIndex": true,
+                                "indexType": "isContinuous",
+                                "showSelection": false,
+                                "visible": true,
+                                "rowKey": "_id",
+                                "border": true,
+                                "defaultFirstRow": false,
+                                "stripe": false,
+                                "hasExpandColumn": false,
+                                "isComputedHeightByViewport": false,
+                                "scrollXEnabled": false,
+                                "scrollYEnabled": false,
+                                "usePagination": true,
+                                "paginationMode": "whole",
+                                "paginationAlign": "right",
+                                "paginationOptions": "10, 20, 30, 40, 50",
+                                "paginationProps": {},
+                                "isTree": false,
+                                "lazy": false,
+                                ":tableTreeProps": "${{\n \"children\": \"children\",\n \"hasChildren\": \"hasChildren\"\n}}",
+                                ":treeProps": "${{\n \"id\": \"_id\",\n \"parentId\": \"parentId\",\n \"orderNo\": \"orderNo\"\n}}",
+                                "selectedIsLinkage": false,
+                                "selectedLeafOnly": false,
+                                "defaultExpandedLevel": 2,
+                                "showSummary": true,
+                                "isRemoteSummary": false,
+                                "remoteSummaryData": null,
+                                "summaryDefaultValue": "_",
+                                "enabledCustomColumnVisibleAndSort": false,
+                                "enabledCustomBorderVisible": false,
+                                "enabledCustomStripeVisible": false,
+                                "enabledCustomRowHeight": false,
+                                "mergeRowCellsRules": "sameValue",
+                                "needValidate": true,
+                                "dataOptions": {},
+                                "pageSize": 10,
+                                ":eventHandlersMap": {},
+                                "prop": "ejxb",
+                                ":summaryProps": "${[\"zj\"]}"
+                              },
+                              "id": "StatefulFormTable-db67b491e5"
+                            }
+                          ],
+                          "actionBar": [
+                            {
+                              "type": "AddDetailAction",
+                              "props": {
+                                "label": "新建",
+                                "type": "",
+                                "insertPlacement": "last",
+                                "visible": true,
+                                ":eventHandlersMap": {},
+                                "tableId": "StatefulFormTable-db67b491e5"
+                              },
+                              "id": "AddDetailAction-0e67b94f9b"
+                            },
+                            {
+                              "type": "ImportExcelDetailAction",
+                              "props": {
+                                "label": "导入",
+                                "icon": "gcbp-bill-icon gcbp-bill-daoru",
+                                "type": "primary",
+                                "limitFileNum": 1000,
+                                "visible": true,
+                                "importType": "append",
+                                "extParams": {},
+                                "isTree": false,
+                                "dataField": "ejxb",
+                                ":fieldList": "${[{\"alias\":\"单价\",\"field\":\"dj\"},{\"alias\":\"数量\",\"field\":\"sl\"},{\"alias\":\"总价\",\"field\":\"zj\"}]}",
+                                ":eventHandlersMap": {},
+                                "tableId": "StatefulFormTable-db67b491e5"
+                              },
+                              "id": "ImportExcelDetailAction-8c9cc6405f"
+                            }
+                          ]
+                        },
+                        "meta": {
+                          "notSaveDesc": {
+                            "actionMaxCount": 3
+                          }
+                        },
+                        "props": {
+                          "label": "分组",
+                          "level": 1,
+                          "enabledCollapse": false,
+                          "enabledActionMaxCount": false,
+                          "visible": true
+                        },
+                        "id": "Section-38e133a153"
+                      }
+                    ],
+                    "actionBar": []
+                  },
+                  "meta": {
+                    "notSaveDesc": {
+                      "actionMaxCount": 3
+                    }
+                  },
+                  "props": {
+                    "label": "基本信息",
+                    "level": 1,
+                    "enabledCollapse": false,
+                    "enabledActionMaxCount": false,
+                    "visible": true
+                  },
+                  "id": "Section-19cdd4f159"
+                },
+                {
+                  "type": "AddBillDetailsDialogModalView",
+                  "props": {
+                    "extParams": {
+                      "urlParams": {
+                        "detailField": "supplierInfo",
+                        "modalTargetWidgetId": "BillDetailSelectAction-cf88db68dc",
+                        "targetUniqueKey": "_id",
+                        "correlationUniqueKey": "id"
+                      }
+                    }
+                  },
+                  "id": "BillDetail.addBillDetailsDialog.BillDetailSelectAction-cf88db68dc.0ddcd2aba4"
+                },
+                {
+                  "type": "AddBillDetailsDialogModalView",
+                  "props": {
+                    "extParams": {
+                      "urlParams": {
+                        "detailField": "supplierInfo",
+                        "modalTargetWidgetId": "AddBillDetailAction-da9a5bda4f",
+                        "targetUniqueKey": "_id",
+                        "correlationUniqueKey": "id"
+                      }
+                    }
+                  },
+                  "id": "BillDetail.addBillDetailsDialog.AddBillDetailAction-da9a5bda4f.ec4e9b9d7a"
+                }
+              ],
+              "actionZone": [
+                {
+                  "type": "SaveAction",
+                  "id": "SaveAction-e327660209"
+                },
+                {
+                  "type": "CommitAction",
+                  "id": "CommitAction-3365647f3c"
+                },
+                {
+                  "type": "EditAction",
+                  "id": "EditAction-f60ae7f849"
+                },
+                {
+                  "type": "CancelAction",
+                  "id": "CancelAction-8747102198"
+                },
+                {
+                  "type": "DeleteBillAction",
+                  "id": "DeleteBillAction-8a81038e48"
+                },
+                {
+                  "type": "CancelCommitAction",
+                  "id": "CancelCommitAction-a925cad0d6"
+                },
+                {
+                  "type": "RefreshAction",
+                  "props": {
+                    "type": "text"
+                  },
+                  "id": "RefreshAction-47e9794c82"
+                }
+              ],
+              "extra": [
+                {
+                  "type": "Section",
+                  "slots": {
+                    "default": [
+                      {
+                        "type": "ProcessTrack",
+                        "props": {
+                          ":visible": "${!!(!store.state.params.extParams.startBillType && store.state.gcpDataSource.currentBill && store.state.gcpDataSource.currentBill.process && store.state.gcpDataSource.currentBill.process.processInstanceId)}"
+                        },
+                        "id": "ProcessTrack-c96ff62587"
+                      }
+                    ]
+                  },
+                  "props": {
+                    "id": "taskSection",
+                    "label": "审批流程",
+                    "level": 1,
+                    "enabledCollapse": false,
+                    "enabledActionMaxCount": false,
+                    ":visible": "${!!(!store.state.params.extParams.startBillType && store.state.gcpDataSource.currentBill && store.state.gcpDataSource.currentBill.process && store.state.gcpDataSource.currentBill.process.processInstanceId)}"
+                  },
+                  "id": "processTrack"
+                }
+              ]
+            },
+            "meta": {
+              "notSaveDesc": {
+                "actionMaxCount": 3,
+                "internalDataSources": [
+                  {
+                    "name": "currentBill",
+                    "type": "object"
+                  }
+                ],
+                "expertHelperPanelHeaderTitle": "助手面板",
+                "defaultExpandExpertHelperPanel": true,
+                "expertHelperPanelResizable": true
+              }
+            },
+            "id": "BillDetailView-ce1c3eb916",
+            "type": "BillDetailView",
+            "props": {
+              "label": "单据详情",
+              "hideActionZone": true,
+              "actionZoneVisible": true,
+              "desc": null,
+              "context": null,
+              "defaultHideActionZone": false,
+              "toolbarPosition": "right",
+              ":watermarkConfig": {},
+              "visibleRequiredFlagOfReadonly": false,
+              "exprExecFormMode": "all",
+              "enabledExpertHelperPanel": false,
+              "enabledIncrementalUpdate": false,
+              "styleClass": "",
+              ":eventHandlersMap": {
+                "mounted": [
+                  {
+                    "id": "handler-694dcadb1c",
+                    "type": "custom",
+                    "params": {},
+                    "handler": "#{ async function(scope, params, prev){\n\n}}"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "_id": "updateBill.myjtestmodule0417.kfkj.default",
+        "kind": "View",
+        "metadata": {
+          "product": "kfkj",
+          "app": "myjtestmodule0417",
+          "tenant": "default",
+          "solution": "default",
+          "name": "updateBill",
+          "alias": "新建/编辑弹窗",
+          "cname": "updateBill.myjtestmodule0417.kfkj",
+          "fname": "updateBill.myjtestmodule0417.kfkj.default",
+          "described": true
+        },
+        "spec": {
+          "base": null,
+          "options": {},
+          "template": {
+            "slots": {
+              "default": [
+                {
+                  "type": "FieldGrid",
+                  "slots": {
+                    "default": [
+                      {
+                        "type": "InputEditor",
+                        "props": {
+                          "prop": "code",
+                          "label": "单据编码",
+                          "showLabel": true,
+                          "textType": "normal",
+                          "icon": "",
+                          "col": 1,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": null,
+                          "enableSelectModal": false,
+                          "readonlyPreWrap": false,
+                          "format": "none",
+                          "isEncrypted": false,
+                          "placeholder": "请输入内容",
+                          "clearable": false,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover"
+                        },
+                        "id": "InputEditor-cc3e33be21"
+                      },
+                      {
+                        "type": "InputEditor",
+                        "props": {
+                          "prop": "name",
+                          "label": "单据名称",
+                          "showLabel": true,
+                          "textType": "normal",
+                          "icon": "",
+                          "col": 1,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": true,
+                          "enableSelectModal": false,
+                          "readonlyPreWrap": false,
+                          "format": "none",
+                          "isEncrypted": false,
+                          "placeholder": "请输入内容",
+                          "clearable": false,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover"
+                        },
+                        "id": "InputEditor-673b3f7581"
+                      },
+                      {
+                        "type": "BillStateEditor",
+                        "props": {
+                          "prop": "billState",
+                          "multiple": false,
+                          "collapseTags": true,
+                          "visible": true,
+                          "label": "单据状态",
+                          "readonly": true
+                        },
+                        "id": "BillStateEditor-ac47559531"
+                      },
+                      {
+                        "type": "InputEditor",
+                        "props": {
+                          "prop": "dept.name",
+                          "label": "制单机构",
+                          "showLabel": true,
+                          "textType": "normal",
+                          "icon": "",
+                          "col": 1,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": null,
+                          "enableSelectModal": false,
+                          "readonlyPreWrap": false,
+                          "format": "none",
+                          "isEncrypted": false,
+                          "placeholder": "请输入内容",
+                          "clearable": false,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover",
+                          "readonly": true
+                        },
+                        "id": "InputEditor-feb5005ff7"
+                      },
+                      {
+                        "type": "InputEditor",
+                        "props": {
+                          "prop": "createdBy.name",
+                          "label": "制单人",
+                          "showLabel": true,
+                          "textType": "normal",
+                          "icon": "",
+                          "col": 1,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": null,
+                          "enableSelectModal": false,
+                          "readonlyPreWrap": false,
+                          "format": "none",
+                          "isEncrypted": false,
+                          "placeholder": "请输入内容",
+                          "clearable": false,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover",
+                          "readonly": true
+                        },
+                        "id": "InputEditor-dd8ef34b83"
+                      },
+                      {
+                        "type": "DateEditor",
+                        "props": {
+                          "prop": "createdDate",
+                          "label": "制单日期",
+                          "showLabel": true,
+                          "col": 1,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": null,
+                          "format": "dateTime",
+                          "readonlyPreWrap": false,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover",
+                          "limitRangeType": "unlimited",
+                          "readonly": true
+                        },
+                        "id": "DateEditor-13b4c1b5f1"
+                      },
+                      {
+                        "type": "TextEditor",
+                        "props": {
+                          "prop": "remark",
+                          "label": "备注",
+                          "showLabel": true,
+                          "col": 2,
+                          "forceBreak": false,
+                          "disabled": false,
+                          "required": null,
+                          "readonlyPreWrap": true,
+                          "placeholder": "请输入内容",
+                          "maxLength": 200,
+                          "visible": true,
+                          "tipIcon": "",
+                          "tipIconType": "info",
+                          "tipContent": "",
+                          "tipTriggerType": "hover",
+                          "enabledCollapseContent": false
+                        },
+                        "id": "TextEditor-0e85c599a6"
+                      }
+                    ]
+                  },
+                  "props": {
+                    "autoComputed": true,
+                    "maxColumnCount": 3,
+                    "gutter": 12,
+                    "visible": true
+                  },
+                  "id": "FieldGrid-05027450ce"
+                }
+              ]
+            },
+            "id": "ModalView-t03cg4ue8j",
+            "type": "ModalView",
+            "props": {
+              "showModalFooter": true,
+              "showModalFooterCancel": true,
+              "showModalFooterConfirm": true,
+              "modalTitle": "标题",
+              "modalSize": "small",
+              "showClose": true,
+              "readonly": null,
+              "fullscreenable": false,
+              "mask": true,
+              "minimizable": false,
+              "draggable": false,
+              "stopPropagation": false,
+              "dataSource": "ds:0d3f233eb2",
+              "extParams": {},
+              ":eventHandlersMap": {
+                "after-open": [
+                  {
+                    "id": "handler-b48b81abd5",
+                    "type": "custom",
+                    "params": {},
+                    "handler": "#{function(scope, params, prev) {\n  var formBillId = ''\n  if (params.args[1] && params.args[1].urlParams) {\n    formBillId = params.args[1].urlParams.id\n  }\n  var loadDataSource = scope.dataContext.loadDataSource\n  if (formBillId) {\n     // 如果参数id有值，则调用数据源时手动更改数据源的method跟传参，改为调用获取单个实体即详情的功能\n    loadDataSource({\n      name: 'billInitData',\n      query: {\n        method: 'getOne',\n        params: {\n          id: formBillId\n        }\n      }\n    })\n  } else {\n    loadDataSource({\n      name: 'billInitData'\n    })\n  }\n}}"
+                  }
+                ],
+                "callback": [
+                  {
+                    "id": "handler-e508ae8697",
+                    "type": "custom",
+                    "params": {},
+                    "handler": "#{function(scope, params, prev){\n  \tvar formRef = params.args[0]\n\treturn this.fns.validateAddBillForm(formRef)\n}}"
+                  },
+                  {
+                    "id": "handler-69a52bef4f",
+                    "type": "custom",
+                    "params": {},
+                    "handler": "#{function(scope, params, prev) {\n  var formBillId = ''\n  // 获取弹窗参数id,判断当前弹窗是编辑还是创建\n  if (params.args[1] && params.args[1].urlParams) {\n    formBillId = params.args[1].urlParams.id\n  }\n  return {\n    continue: function(item) {\n      if (!!formBillId && item.id === 'handler-a633e4f794') {\n        // 如果当前id参数有值，并且后续动作的id是调用创建功能的动作，则需要跳过本次动作\n        return true\n      } else if (!formBillId && item.id === 'handler-53973c7d1c') {\n        // 如果当前id参数没有值，并且后续动作的id是调用局部更新功能的动作，则需要跳过本次动作\n        return true\n      }\n      // 其余动作默认为false，则都要执行\n      return false\n    }\n  }\n}}"
+                  },
+                  {
+                    "id": "handler-a633e4f794",
+                    "type": "requestFeat",
+                    "params": {
+                      "docDataSource": {
+                        "docName": "Bill.template-bill.gcdp.default",
+                        "method": "create",
+                        "params": {},
+                        "_config": {
+                          "prioritizedApiMap": true
+                        },
+                        "data": "${context.state.gcpDataSource.billInitData}"
+                      },
+                      "isDefaultService": true,
+                      "refreshQueries": "${['tableListData']}"
+                    },
+                    "options": {
+                      "docSourceId": "227386603023077376"
+                    }
+                  },
+                  {
+                    "id": "handler-53973c7d1c",
+                    "type": "requestFeat",
+                    "params": {
+                      "docDataSource": {
+                        "docName": "Bill.template-bill.gcdp.default",
+                        "method": "update",
+                        "params": {
+                          "id": "${context.state.gcpDataSource.billInitData._id}"
+                        },
+                        "_config": {
+                          "prioritizedApiMap": true
+                        },
+                        "data": "${context.state.gcpDataSource.billInitData}"
+                      },
+                      "isDefaultService": true,
+                      "refreshQueries": "${['tableListData']}"
+                    },
+                    "options": {
+                      "docSourceId": "225708566414794752"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "_id": "addBillDetailsDialog.myjtestmodule0417.kfkj.default",
+        "kind": "View",
+        "metadata": {
+          "product": "kfkj",
+          "app": "myjtestmodule0417",
+          "tenant": "default",
+          "solution": "default",
+          "name": "addBillDetailsDialog",
+          "alias": "添加细表示例（供应商）",
+          "cname": "addBillDetailsDialog.myjtestmodule0417.kfkj",
+          "fname": "addBillDetailsDialog.myjtestmodule0417.kfkj.default",
+          "described": true
+        },
+        "spec": {
+          "base": null,
+          "options": {},
+          "template": {
+            "slots": {
+              "default": [
+                {
+                  "type": "StatefulFormTable",
+                  "slots": {
+                    "default": [
+                      {
+                        "type": "FormTableColumn",
+                        "meta": {
+                          "isGroup": false
+                        },
+                        "props": {
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "label": "供应商名称",
+                          "textType": "normal",
+                          "required": null,
+                          "disabled": false,
+                          "isSortable": false,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipPlacement": "right",
+                          "headTipEnabled": true,
+                          ":cellTooltipIconConfig": {},
+                          ":eventHandlersMap": {},
+                          "prop": "name",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "fixed": false,
+                          "visible": true,
+                          ":cascaderPanelProps": {},
+                          "type": "string",
+                          "format": "none",
+                          "isEncrypted": false,
+                          "placeholder": "请输入内容",
+                          "clearable": false
+                        },
+                        "id": "FormTableColumn-c2b023f441"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "meta": {
+                          "isGroup": false
+                        },
+                        "props": {
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "label": "黑名单",
+                          "textType": "normal",
+                          "required": null,
+                          "disabled": false,
+                          "isSortable": false,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipPlacement": "right",
+                          "headTipEnabled": true,
+                          ":cellTooltipIconConfig": {},
+                          ":eventHandlersMap": {},
+                          "prop": "blackList",
+                          "headTipContent": "",
+                          "headTipTriggerType": "hover",
+                          "fixed": false,
+                          "visible": true,
+                          ":cascaderPanelProps": {},
+                          "type": "bool",
+                          "truthText": "是",
+                          "falsyText": "否",
+                          "componentType": "RadioEditor"
+                        },
+                        "id": "FormTableColumn-feaf6e7b6b"
+                      },
+                      {
+                        "type": "FormTableColumn",
+                        "slots": {
+                          "default": [
+                            {
+                              "type": "CommonAction",
+                              "props": {
+                                "label": "添加",
+                                "icon": "",
+                                "type": "text",
+                                "size": "small",
+                                "disabled": false,
+                                "tooltipEnabled": false,
+                                "tooltipContent": "",
+                                "stopPropagation": "",
+                                ":visible": "#{function(scope) {\n  return !this.fns.addBillDetailsDialogRowIsSelected(scope)\n}}",
+                                ":eventHandlersMap": {
+                                  "click": [
+                                    {
+                                      "id": "handler-28d526a327",
+                                      "type": "custom",
+                                      "params": {},
+                                      "handler": "#{function(scope, params, prev) {\n  // 获取弹窗使用者的控件id\n  var modalTargetWidgetId = this.extParams.urlParams.modalTargetWidgetId\n  // 根据id获取细表控件内置添加数据的方法\n  scope.dataContext.ref(modalTargetWidgetId)().addBillDetailItems(scope.dataModel)\n}}"
+                                    }
+                                  ]
+                                }
+                              },
+                              "id": "CommonAction-53d0895ead"
+                            },
+                            {
+                              "type": "CommonAction",
+                              "props": {
+                                "label": "已添加",
+                                "icon": "",
+                                "type": "text",
+                                "size": "small",
+                                "disabled": true,
+                                "tooltipEnabled": false,
+                                "tooltipContent": "",
+                                "stopPropagation": "",
+                                ":eventHandlersMap": {
+                                  "click": []
+                                },
+                                ":visible": "#{function(scope) {\n  return this.fns.addBillDetailsDialogRowIsSelected(scope)\n}}"
+                              },
+                              "id": "CommonAction-249788190d"
+                            }
+                          ]
+                        },
+                        "props": {
+                          "isExtColumn": false,
+                          "align": "left",
+                          "showOverflowTooltip": true,
+                          "label": "操作",
+                          "textType": "normal",
+                          "required": null,
+                          "disabled": false,
+                          "isSortable": false,
+                          "headTipIcon": "",
+                          "headTipIconType": "info",
+                          "headTipPlacement": "right",
+                          "headTipEnabled": true,
+                          ":cellTooltipIconConfig": {},
+                          ":eventHandlersMap": {},
+                          "prop": "newColumn",
+                          "type": "action",
+                          "fixed": "right",
+                          "actionMaxCount": 3
+                        },
+                        "id": "FormTableColumn-b0f5c7792f"
+                      }
+                    ]
+                  },
+                  "props": {
+                    "showIndex": true,
+                    "showSelection": false,
+                    "visible": true,
+                    "rowKey": "_id",
+                    "border": true,
+                    "defaultFirstRow": false,
+                    "stripe": false,
+                    "isComputedHeightByViewport": false,
+                    "scrollXEnabled": false,
+                    "scrollYEnabled": false,
+                    "usePagination": false,
+                    "paginationMode": "whole",
+                    "paginationAlign": "right",
+                    "paginationProps": {},
+                    "isTree": false,
+                    "lazy": false,
+                    ":treeProps": "${{\n \"id\": \"_id\",\n \"parentId\": \"parentId\",\n \"orderNo\": \"orderNo\"\n}}",
+                    "selectedIsLinkage": false,
+                    "selectedLeafOnly": false,
+                    "defaultExpandedLevel": 2,
+                    "showSummary": true,
+                    "summaryProps": [],
+                    "isRemoteSummary": false,
+                    "remoteSummaryData": null,
+                    "summaryDefaultValue": "_",
+                    "enabledCustomColumnVisibleAndSort": false,
+                    "enabledCustomBorderVisible": false,
+                    "enabledCustomStripeVisible": false,
+                    "enabledCustomRowHeight": false,
+                    "mergeRowCellsRules": "sameValue",
+                    "needValidate": true,
+                    "dataOptions": {},
+                    "indexType": "isContinuous",
+                    "paginationOptions": "10, 20, 30, 40, 50",
+                    "pageSize": 10
+                  },
+                  "id": "StatefulFormTable-6babf84e15"
+                }
+              ]
+            },
+            "id": "ModalView-h024wwhgh5",
+            "type": "ModalView",
+            "props": {
+              "modalFooterConfirmLabel": "确 定",
+              "showModalFooterConfirm": true,
+              "modalFooterCancelLabel": "取 消",
+              "showModalFooterCancel": true,
+              "modalTitle": "添加",
+              "modalSize": "small",
+              "showClose": true,
+              "readonly": true,
+              "showModalFooter": true,
+              "modalFooterBtnLocation": "left",
+              "fullscreenable": false,
+              "mask": true,
+              "minimizable": false,
+              "draggable": false,
+              "stopPropagation": false,
+              "dataSource": {
+                "name": "ModalView-h024wwhgh5",
+                "type": "json",
+                "initialData": [
+                  {
+                    "id": "1",
+                    "name": "广联达科技股份有限公司",
+                    "blackList": false
+                  },
+                  {
+                    "id": "2",
+                    "name": "百度",
+                    "blackList": false
+                  },
+                  {
+                    "id": "3",
+                    "name": "阿里",
+                    "blackList": true
+                  }
+                ]
+              },
+              "extParams": {}
+            }
+          }
+        }
+      }
+    ],
+    "viewRefs": [
+      "updateBill.template-bill.gcdp.default.ModalView",
+      "addBillDetailsDialog.template-bill.gcdp.default.ModalView"
+    ]
+  }
+}
