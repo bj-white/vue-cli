@@ -21,6 +21,7 @@ export default {
     resolvedConfig () {
       const viewConfig = this.getConfig()
       this.resolverChain.resolve(viewConfig)
+      console.log('====================1', viewConfig)
       return viewConfig
     },
     rootScope () {
@@ -42,6 +43,42 @@ export default {
     renderByDesc (h, desc, scope) {
       if (desc.text) {
         return h(desc.type, desc.text)
+      }
+      const scopedSlots = this.getScopedSlots(h, desc, scope)
+      return h(desc.type, {
+        scopedSlots
+      })
+    },
+    getScopedSlots (h, desc, scope) {
+      const result = {}
+      if (desc.content) {
+        console.log('todo=============')
+      }
+      if (desc.slots) {
+        Object.keys(desc.slots).forEach(slotName => {
+          if (desc.slots[slotName]) {
+            result[slotName] = this.getSlotFn(h, desc.slots[slotName], scope)
+          }
+        })
+      }
+      return result
+    },
+    getSlotFn (h, slotVal, parentScope) {
+      return scope => {
+        if (typeof slotVal === 'function') {
+          return this.renderSlotComponent(h, slotVal(), scope)
+        } else {
+          return this.renderSlotComponent(h, slotVal, scope)
+        }
+      }
+    },
+    renderSlotComponent (h, desc, scope) {
+      if (Array.isArray(desc)) {
+        return desc.map(descItem => {
+          return this.renderByDesc(h, descItem, scope)
+        })
+      } else {
+        console.log('todo===========')
       }
     },
     ref (id) {
