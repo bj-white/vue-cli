@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'DataViewPropHookProvider',
   provide () {
     return {
       dataviewPropHook: this.dataviewPropHook

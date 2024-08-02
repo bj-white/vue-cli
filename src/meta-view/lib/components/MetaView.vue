@@ -21,7 +21,6 @@ export default {
     resolvedConfig () {
       const viewConfig = this.getConfig()
       this.resolverChain.resolve(viewConfig)
-      console.log('====================1', viewConfig)
       return viewConfig
     },
     rootScope () {
@@ -65,10 +64,11 @@ export default {
     },
     getSlotFn (h, slotVal, parentScope) {
       return scope => {
+        const mergedScope = { ...parentScope, ...scope }
         if (typeof slotVal === 'function') {
-          return this.renderSlotComponent(h, slotVal(), scope)
+          return this.renderSlotComponent(h, slotVal(), mergedScope)
         } else {
-          return this.renderSlotComponent(h, slotVal, scope)
+          return this.renderSlotComponent(h, slotVal, mergedScope)
         }
       }
     },

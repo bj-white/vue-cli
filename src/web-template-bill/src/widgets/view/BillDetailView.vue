@@ -14,16 +14,12 @@
 
 <script>
 import DataProvider from '../../../../gcp-requests/src/components/DataProvider.vue'
-import DataContext from '../../../../gcp-forms/lib/layout/DataContext.vue'
 import HelloWorld from '../../../../components/HelloWorld.vue'
-import DataViewPropHookProvider from '../../../../gcp-forms/lib/layout/DataViewPropHookProvider.vue'
 import { mapActions } from 'vuex'
 export default {
   components: {
     DataProvider,
-    DataContext,
     HelloWorld,
-    DataViewPropHookProvider
   },
   data () {
     return {

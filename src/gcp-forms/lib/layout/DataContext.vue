@@ -1,12 +1,12 @@
 <template>
   <div>
     <slot></slot>
-    {{ readonly }}
   </div>
 </template>
 
 <script>
 export default {
+  name: 'DataContext',
   provide () {
     const provider = {}
     if (this.data !== undefined) {

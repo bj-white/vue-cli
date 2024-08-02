@@ -1,0 +1,107 @@
+[
+  {
+    "name": "单据控件",
+    "code": "GCDPWebTemplateBill",
+    "resourcePoolCode": "GCDPWebTemplateBill",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/gcp/gcdp-web-template-bill/2.29.0-test/",
+    "elementList": "https://cdn.developer.glodon.com/gcp/gcdp-web-template-bill/2.29.0-test/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/gcp/gcdp-web-template-bill/2.29.0-test/gcp.js",
+    "resourcePoolVersion": "2.29.0-test",
+    "i18nEntry": "https://cdn.developer.glodon.com/gcp/gcdp-web-template-bill/2.29.0-test/locales/index.json",
+    "isI18n": false,
+    "options": {
+      "md5Code": "fiGI3JMYiVybHZAVzSvvzQ=="
+    }
+  },
+  {
+    "name": "web端通用控件库",
+    "code": "GCPWebFramework",
+    "resourcePoolCode": "GCPWebFramework",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/gcp/web-framework/2.29.0-test/",
+    "elementList": "https://cdn.developer.glodon.com/gcp/web-framework/2.29.0-test/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/gcp/web-framework/2.29.0-test/gcp.js",
+    "resourcePoolVersion": "2.29.0-test",
+    "i18nEntry": "https://cdn.developer.glodon.com/gcp/web-framework/2.29.0-test/locales/index.json",
+    "isI18n": false,
+    "options": {
+      "md5Code": "a8t4Ue4kRnWSL3dbxw/BPw=="
+    }
+  },
+  {
+    "name": "生产管理产品线通用控件库",
+    "code": "GCBPProductionResourcePoolWeb",
+    "resourcePoolCode": "GCBPProductionResourcePoolWeb",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/pmp/gcbp-production-resource-pool-web/1.2.0/",
+    "elementList": "https://cdn.developer.glodon.com/pmp/gcbp-production-resource-pool-web/1.2.0/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/pmp/gcbp-production-resource-pool-web/1.2.0/gcp.js",
+    "resourcePoolVersion": "1.2.0",
+    "i18nEntry": null,
+    "isI18n": null,
+    "options": {
+      "md5Code": "iofcKhsgkMJHMnaMlW32jA=="
+    }
+  },
+  {
+    "name": "Pmhub解决方案部通用控件库",
+    "code": "PmhubPublicWeb",
+    "resourcePoolCode": "PmhubPublicWeb#280395143702786048",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/gcbp/pmhub-public-web/1.0.1-alpha.1/",
+    "elementList": "https://cdn.developer.glodon.com/gcbp/pmhub-public-web/1.0.1-alpha.1/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/gcbp/pmhub-public-web/1.0.1-alpha.1/gcp.js",
+    "resourcePoolVersion": "1.0.1-alpha.1",
+    "i18nEntry": null,
+    "isI18n": null,
+    "options": {
+      "md5Code": "0/p+swdTBVMCb+IC7Krogg=="
+    }
+  },
+  {
+    "name": "开发框架测试控件",
+    "code": "GCBPProductionResourcePoolWeb",
+    "resourcePoolCode": "GCBPProductionResourcePoolWeb#365498673526546432",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/pmp/gcbp-production-resource-pool-web/1.5.0/",
+    "elementList": "https://cdn.developer.glodon.com/pmp/gcbp-production-resource-pool-web/1.5.0/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/pmp/gcbp-production-resource-pool-web/1.5.0/gcp.js",
+    "resourcePoolVersion": "1.5.0",
+    "i18nEntry": "https://cdn.developer.glodon.com/pmp/gcbp-production-resource-pool-web/1.5.0/locales/index.json",
+    "isI18n": false,
+    "options": {
+      "md5Code": "YyK+Kd+eDz1zeaieIozBPA=="
+    }
+  },
+  {
+    "name": "myj测试控件库",
+    "code": "COMGCBPMarketBidProcessWeb",
+    "resourcePoolCode": "COMGCBPMarketBidProcessWeb#428942890676011008",
+    "type": 1,
+    "baseUrl": "https://cdn.developer.glodon.com/gcbp/gcbp-market-bid-process-web/1.0.0-alpha.3/",
+    "elementList": "https://cdn.developer.glodon.com/gcbp/gcbp-market-bid-process-web/1.0.0-alpha.3/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/gcbp/gcbp-market-bid-process-web/1.0.0-alpha.3/gcp.js",
+    "resourcePoolVersion": "1.0.0-alpha.3",
+    "i18nEntry": "https://cdn.developer.glodon.com/gcbp/gcbp-market-bid-process-web/1.0.0-alpha.3/locales/index.json",
+    "isI18n": false,
+    "options": {
+      "md5Code": "K2ez1IyMQeuV3rXwyYYngA=="
+    }
+  },
+  {
+    "name": "业务中台Web端通用控件库",
+    "code": "GCBPWebCommonTreeWidgets",
+    "resourcePoolCode": "GCBPWebCommonTreeWidgets#426392214543220736",
+    "type": 1,
+    "baseUrl": "${GCP_CDN_BASE_URL}/gcbp/gcbp-web-common-tree-widgets/latest/",
+    "elementList": "https://cdn.developer.glodon.com/gcbp/gcbp-web-common-tree-widgets/latest/gcp-meta.json",
+    "elementEntry": "https://cdn.developer.glodon.com/gcbp/gcbp-web-common-tree-widgets/latest/gcp.js",
+    "resourcePoolVersion": "1.0",
+    "i18nEntry": "https://cdn.developer.glodon.com/gcbp/gcbp-web-common-tree-widgets/latest/locales/index.json",
+    "isI18n": false,
+    "options": {
+      "md5Code": "pjWkzW5QuPHu8knAXK1Jyw=="
+    }
+  }
+]

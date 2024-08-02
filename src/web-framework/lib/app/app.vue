@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DataContext :context="context">
+    <DataContext v-if="render" :context="context">
       <router-view></router-view>
     </DataContext>
   </div>
@@ -8,13 +8,8 @@
 
 <script>
 import { mapActions } from 'vuex'
-// import BillDetailView from '../../../web-template-bill/src/widgets/view/BillDetailView.vue'
-import DataContext from '../../../gcp-forms/lib/layout/DataContext.vue'
 export default {
-  components: {
-    // BillDetailView,
-    DataContext
-  },
+  components: {},
   props: {
     context: Object
   },

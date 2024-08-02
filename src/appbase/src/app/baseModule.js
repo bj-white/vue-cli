@@ -2,14 +2,13 @@ import Vuex from 'vuex'
 import DocService from '../doc/service'
 import { applyRequestPlugin } from '../../../gcp-requests/src/index'
 import buildStoreContext from '../utils/context'
-import DataProvider from '../../../gcp-requests/src/components/DataProvider.vue'
 import { GCPUtils } from '../../../gcp-utils/lib/index'
 import Router from 'vue-router'
 import MetaView from '../../../meta-view/lib/components/MetaView.vue'
-import { BillDetailView, BillListView, NewAction, StatefulFormTable } from '../../../web-template-bill/src/widgets/index'
 
-export default class Module {
-  constructor ({ config, views = [] }) {
+export default class BaseModule {
+  constructor ({ config, views = [], components = {} }) {
+    this.components = components
     this.initialize(config)
     this.viewDescs = this.buildViewDescs(views)
     this.store = this.createStore()
@@ -64,16 +63,11 @@ export default class Module {
     this.mutations = [],
     this.actions = [
       'bootstrap',
-      'fetchDetailInitData'
     ]
     this.getters = []
     this.functions = []
     this.components = {
-      DataProvider,
-      BillDetailView,
-      BillListView,
-      NewAction,
-      StatefulFormTable
+      ...this.components
     }
     this.editors = {}
     this.utils = { ...GCPUtils }
@@ -122,11 +116,6 @@ export default class Module {
     requestPromisesAllSettled.push(this.initServices())
     await Promise.allSettled(requestPromisesAllSettled)
     this.defaultService = this.services.get('default')
-  }
-
-  async fetchDetailInitData ({ commit }) {
-    const bill = await this.defaultService.new()
-    commit('request/initData', { name: 'currentBill', data: bill })
   }
 
   async initServices () {
