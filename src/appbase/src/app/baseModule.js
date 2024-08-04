@@ -46,7 +46,8 @@ export default class BaseModule {
           context: this.context,
           scope: {
             fns: this.fns,
-          }
+          },
+          dataSourceDefs: this.config.dataSourceDefs
         },
         meta
       }

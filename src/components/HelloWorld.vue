@@ -5,7 +5,7 @@
       <input type="text" v-model="item.sl">
       <input type="text" v-model="item.zj">
     </div>
-    <button @click="handleClick">switch me</button>
+    <button @click="handleClick" ref="aaaa">switch me</button>
   </div>
 </template>
 
@@ -17,14 +17,26 @@ export default {
         model: null
       }
     },
-    dataviewPropHook: {
+    readonlyProvider: {
       default: {}
     },
     conextProvider: {
       default: {}
-    }
+    },
+    dataviewPropHook: {
+      default: {}
+    },
   },
-  created () {},
+  created () {
+    console.log('dataProvider==========', this.dataProvider)
+    console.log('readonlyProvider==========', this.readonlyProvider)
+    console.log('conextProvider==========', this.conextProvider)
+    console.log('dataviewPropHook==========', this.dataviewPropHook)
+  },
+  mounted () {
+    console.log(this.conextProvider.parentContext.ref('aaaa')())
+    console.log(this.$refs['aaaa'])
+  },
   methods: {
     handleClick () {
       this.dataProvider.model.toggleReadonly(false)

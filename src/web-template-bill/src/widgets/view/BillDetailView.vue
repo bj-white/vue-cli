@@ -21,6 +21,11 @@ export default {
     DataProvider,
     HelloWorld,
   },
+  props: {
+    context: {
+      type: Object
+    }
+  },
   data () {
     return {
       dataviewPropHook: {
